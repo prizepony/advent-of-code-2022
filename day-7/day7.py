@@ -28,7 +28,7 @@ def answer():
     total_size = size_of(root)
     total_dir_size = sum(totals)
 
-    print("Total Size: %d" % total_size)
+    #print("Total Size: %d" % total_size)
     print("Part One - Total directory size <=100000: %d" % total_dir_size)
     # Answer: 1543140
 
@@ -40,6 +40,7 @@ def answer():
             break
 
     print("Part Two - Size of directory removed: %d" % rm_size)
+    # Answer: 1117448
 
 root = Node('/', None, True)
 current = root
@@ -50,7 +51,7 @@ input = open("input", "r")
 prompt = input.readline().strip().split()
 
 while prompt:
-    print(prompt)
+    #print(prompt)
 
     if prompt[0] == "$":
         if prompt[1] == "cd":
